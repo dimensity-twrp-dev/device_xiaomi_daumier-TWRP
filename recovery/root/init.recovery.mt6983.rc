@@ -19,7 +19,7 @@ on late-fs
     exec_start wait_for_keymaster
 
     # Mount RW partitions which need run fsck
-    mount_all /first_stage_ramdisk/fstab.mt6895 --late
+    mount_all /first_stage_ramdisk/fstab.mt6983 --late
 
 on post-fs
     start boot-hal-1-2

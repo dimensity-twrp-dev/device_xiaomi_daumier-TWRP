@@ -22,6 +22,7 @@
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
+        vendor.xiaomi.cit.wifi@1.0_compatibility_matrix.xml
 -->
 <compatibility-matrix version="4.0" type="framework">
     <hal format="hidl" optional="true">
@@ -688,6 +689,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.cit.wifi</name>
+        <version>1.0</version>
+        <interface>
+            <name>IWifiService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.cld</name>
         <version>1.0</version>
         <interface>
@@ -812,14 +821,6 @@
         <version>1.0-1</version>
         <interface>
             <name>ITidaService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.vibratorfeature</name>
-        <version>1.0</version>
-        <interface>
-            <name>IVibratorFeature</name>
             <instance>default</instance>
         </interface>
     </hal>
