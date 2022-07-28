@@ -49,5 +49,5 @@ void model_property_override(const std::string& device, const std::string& model
 }
 
 void vendor_load_properties() {
-    model_property_override("daumier", "Xiaomi 12Pro MTK");
+    model_property_override("daumier", "Xiaomi 12 Pro Dimensity");
 }
