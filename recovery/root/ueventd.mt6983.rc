@@ -19,8 +19,7 @@
 /dev/block/by-name/proinfo   0660    root    system
 /dev/block/by-name/nvram     0660    root    system
 /dev/block/by-name/para      0660    root    system
-/dev/block/by-name/logo_a    0660    root    system
-/dev/block/by-name/logo_b    0660    root    system
+/dev/block/by-name/logo      0660    root    system
 /dev/block/by-name/frp       0660    root    system
 /dev/block/by-name/md1img    0640    root    system
 /dev/block/by-name/md1img_a  0640    root    system
@@ -39,7 +38,8 @@
 /dev/fw_log_wifimcu       0660   system     system
 /dev/fw_log_btmcu         0660   system     system
 /dev/conninfra_dev        0660   system     system
-/dev/conn_scp_dev         0660   system     system
+/dev/conn_scp             0660   system     system
+/dev/conn_pwr_dev         0660   system     system
 
 # BT
 /dev/stpbt                0660   bluetooth  bluetooth
@@ -60,10 +60,13 @@
 # WIFI
 /dev/wmtWifi              0660   wifi     wifi
 /dev/fw_log_wifi          0660   wifi     wifi
-/dev/fw_log_ics	          0660   wifi     wifi
+/dev/fw_log_ics           0660   wifi     wifi
 
 # FMRadio
 /dev/fm                   0660   media     media
+
+# ConnFem
+/dev/connfem              0660   system     system
 
 # NFC
 /dev/st21nfc              0660   nfc        radio
@@ -192,7 +195,6 @@
 
 #MTK In-House TEE
 /dev/ttyACM0              0660   radio      radio
-
 #CCU
 /dev/ccu*      0660 system camera
 
@@ -201,6 +203,7 @@ subsystem mi_display
     devname uevent_devpath
     dirname /dev/mi_display
 
+# xiaomi display feature
 /dev/mi_display/*         0660   system       graphics
 
 #elliptic sensor
